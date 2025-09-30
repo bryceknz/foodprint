@@ -30,8 +30,7 @@ dev = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["foodprint*"]
+where = ["src"]
 
 [tool.setuptools.package-data]
-foodprint = ["data/*.csv"]
+"*" = ["../data/*.csv"]

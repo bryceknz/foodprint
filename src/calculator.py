@@ -23,7 +23,7 @@ def calculate_impact(food: str, weight_grams: float) -> Dict[str, float]:
     """
     # Get the path to the CSV file
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    csv_path = os.path.join(current_dir, "data", "food_impact.csv")
+    csv_path = os.path.join(current_dir, "..", "data", "food_impact.csv")
 
     # Check if file exists
     if not os.path.exists(csv_path):
